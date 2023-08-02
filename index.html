@@ -6,66 +6,468 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>noon.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html">
-            <div>
-                <img src="./assets/header/noon-logo-en.svg" alt="noon" class="logo-img">
-            </div>
-        </a>
+    <div class="bg-[#f7f7fa]">
 
-        <div class="header-btn-main">
-            <button class="header-btn">
-                <img src="./assets/header/flag.svg" alt="flag">
-                <span class="header-span1 d-flex">
-                    <span class="header-span2">
-                        Deliver to
-                        <div class="span-img">
-                            <img src="./assets/header/dropdownArrow.svg" alt="">
+        <div class="header flex justify-between ">
+            <a href="index.html">
+                <div>
+                    <img src="./assets/header/noon-logo-en.svg" alt="noon" class="logo-img">
+                </div>
+            </a>
+            <a class="text-4xl md:hidden " href="#">&#8801</a>
+            <div class="header-btn-main hidden md:block">
+                <button class="header-btn">
+                    <img src="./assets/header/flag.svg" alt="flag">
+                    <span class="header-span1 d-flex">
+                        <span class="header-span2">
+                            Deliver to
+                            <div class="span-img">
+                                <img src="./assets/header/dropdownArrow.svg" alt="">
 
+                            </div>
+
+                        </span>
+                        <div class="dubai">
+                            <span class="dubai-span">Dubai</span>
                         </div>
-
                     </span>
-                    <div class="dubai">
-                        <span class="dubai-span">Dubai</span>
-                    </div>
-                </span>
-            </button>
+                </button>
+            </div>
+            <div class="input-box hidden md:block">
+                <input type="text" placeholder="What are you looking for? " autocomplete="off" value="">
+            </div>
+            <div class="d-flex العربية ">
+                <div class="hidden md:block">العربية</div>
+
+            </div>
+            <div>
+                <div class="d-flex">
+                    <button class="sing-btn hidden md:block">
+                        <span>Sing In <i class="fa-regular fa-user"></i></span>
+
+
+                    </button>
+
+                </div>
+            </div>
+            <a class="cartlink hidden md:block" href="index.html">
+                <span>Cart <i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
+
+
+
+
+
         </div>
-        <div class="input-box">
-            <input type="text" placeholder="What are you looking for? " autocomplete="off" value="">
-        </div>
-        <div class="d-flex العربية">
-            <div>العربية</div>
-            
+        <div class="flex items-center gap-3 p-1 bg-[#fcfbf4] xl:w-[100%] md:aouto sm:text-center flex-nowrap">
+            <div>
+                <!-- <a href="index.html" class="no-underline text-[#292964] border-r-2 p-1 sm:justify-center">
+                    ALL CATEGORIES
+                </a> -->
+                <a href="#"
+                    class="no-underline text-[#1a73e8] border-r-2 p-1 text-sm ml-4 font-bold lg:block sm:justify-center sm:w-[100%]">ALL
+                    CATEGORIES
+                    <i class="fa-solid fa-caret-down pl-14 pr-4 lg:block md:block sm:block"></i>
+                </a>
+
+            </div>
+
+            <ul class="flex  gap-3 items-center flex-wrap pl-4 sm:flex-nowrap flex-nowrap">
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm  xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">ELECTRONICS</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">MEN</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">WOMEN</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">HOME</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:hidden w-[100%] sm:hidden hidden flex-nowrap">
+                        BEAUTY & FRAGRANCE</a></li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block  w-[100%] sm:hidden hidden flex-nowrap">
+                        BABY</a></li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">TOYS</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">
+                        SPORTS</a></li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:hidden w-[100%] sm:hidden hidden flex-nowrap">BESTSELLERS</a>
+                </li>
+                <li><a href="#"
+                        class="no-underline font-bold text-[#000000] text-sm xl:block md:block w-[100%] sm:hidden hidden flex-nowrap">SELL
+                        ON
+                        NOON</a>
+                </li>
+                <div class="text-center justify-center xl:block lg:block md:block sm:block"><img
+                        src="./assets/noon pictures/nav-img.png" class="w-[150px]" alt="nav-img">
+                </div>
+            </ul>
+
         </div>
         <div>
-            <div class="d-flex">
-                <button class="sing-btn">
-                    <span>Sing In <i class="fa-regular fa-user"></i></span>
-
-
-                </button>
-                
+            <img src="./assets/noon pictures/one.jpg" alt="one" class="w-full xl:block lg:block md:block sm:block">
+        </div>
+        <div class="flex">
+            <div class="flex w-full">
+                <img src="https://f.nooncdn.com/mpcms/EN0001/assets/adeb24ee-42b0-4d34-84d6-bd55309cf989.png?format=avifundefined"
+                    alt="banner" width="884px" height="185px">
+                <img src="https://f.nooncdn.com/mpcms/EN0001/assets/519ae5db-4c6d-4d27-9ba7-5ea41fdffa10.png?format=avifundefined"
+                    alt="" width="190px" height="185px">
+                <img src="https://f.nooncdn.com/mpcms/EN0001/assets/a393899a-7a52-4201-8f98-43d0be8a8859.png?format=avifundefined"
+                    alt="" width="190px" height="185px">
             </div>
         </div>
-        <a class="cartlink" href="index.html">
-            <span>Cart <i class="fa-solid fa-cart-shopping"></i></span>
-        </a>
+        <div class="bg-[#fff0be] flex pt-3 pb-3 justify-evenly">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/4cf2b36f-825c-41fe-b32d-7c857b55dea5.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/3ead1590-904c-4625-a7d8-bb0da354dfad.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/049f4d00-1187-4d06-83af-c65a0a3240f8.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/eed565bd-e3e4-4139-b098-6a00b0cc25f2.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/aa60e785-e5d2-4c7d-a84a-4101a3c8cee9.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/078e0ed3-c3a0-4823-9d6d-b35d69bc6f60.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/5eb71b1c-5dca-4061-b335-54d8bf42b99a.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/aa35f5f5-daf6-4ab0-a3ac-23c9b50170aa.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/5ad319f8-438c-488c-a221-580f6adb3dd4.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/2ba66eb4-42d5-4415-8d02-8a1630a4ecbd.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/3f7fe099-b01f-4d7b-a550-4c06fa8e5fe2.png?format=avifundefined"
+                alt="" width="88px" height="129px">
+            <img src="https://f.nooncdn.com/mpcms/EN0001/assets/ea866146-53ee-4bcc-9474-cec82078361b.png?format=avifundefined"
+                alt="" width="88px" height="129px">
 
+        </div>
+        <div class="mt-3 sm:object-cover md:flex justify-evenly">
+            <div class="bg-[#ffffff] flex-col pl-4">
+                <div>
+                    <h1 class="font-bold text-[22px] text-left text-[#404553] pt-3">More reason to shop</h1>
+                </div>
+                <div class="flex justify-evenly gap-3 pr-4 ">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+                <div class="flex justify-evenly mt-3 mb-4 gap-3 pr-4">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+            </div>
+            <div class="bg-[#ffffff] flex-col pl-4">
+                <div>
+                    <h1 class="font-bold text-[22px] text-left text-[#404553] pt-3">More reason to shop</h1>
+                </div>
+                <div class="flex justify-evenly gap-3 pr-4">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+                <div class="flex justify-evenly mt-3 mb-4 gap-3 pr-4">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+            </div>
+            <div class="bg-[#ffffff] flex-col pl-4">
+                <div>
+                    <h1 class="font-bold text-[22px] text-left text-[#404553] pt-3">More reason to shop</h1>
+                </div>
+                <div class="flex justify-evenly gap-3 pr-4">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+                <div class="flex justify-evenly mt-3 mb-4 gap-3 pr-4">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/0150c5c8-02fd-491b-a591-90ec7bf42643.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                    <img src="https://f.nooncdn.com/mpcms/EN0001/assets/13e146bb-6381-4d6e-9620-0b0743650dc6.png?format=avifundefined"
+                        alt="" width="180px" height="177px">
+                </div>
+            </div>
 
+        </div>
+        <div class="bg-[#fffdea] cursor-pointer">
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-4 ml-7 pb-3 font-sans">Be well-prepared for school</h1>
+            <div class=" md:flex hidden justify-evenly pb-6">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/eefe0d11-d7df-486f-8da4-cc225d4d04a5.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/eabc42ae-3f42-4dc4-95c9-3369d5dcded0.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/d1e504e3-8ade-4e8a-bc10-77d91849c96c.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/c6708481-ab1d-4511-8b79-936174edeeb8.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/4980531e-5643-4e7a-bf07-bd3d6a9a6e0d.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/a6b7b8bb-0dee-45af-b9ce-2aca832e37b4.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/fac1ddc4-5dfc-40ec-910b-efee1f8db8b3.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/5b60efe2-4261-4f70-975c-d0aac9ee6314.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/fac1ddc4-5dfc-40ec-910b-efee1f8db8b3.png?format=avifundefined" alt="">
+                <img width="92" height="159px" src="https://f.nooncdn.com/mpcms/EN0001/assets/c1265fd6-66a3-4450-9f9a-2e5dbf14eb8b.png?format=avifundefined" alt="">
+            </div>
+        </div>
+        <div>
+            <img class="w-full" src="https://f.nooncdn.com/mpcms/EN0001/assets/5acad584-29ae-4ef0-ae7d-b9c7f17807fe.gif?format=avifundefined" alt="">
+        </div>
+        <div class="bg-[#dddddd] cursor-pointer">
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Women's fashion</h1>
+            <div class="md:flex hidden justify-evenly">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/14fa1567-c902-4978-93d1-e696d6a1dc6c.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/95a2101f-c4d8-4bb1-a995-af22e7f57ee4.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/87448f04-a308-4e2d-900d-6d73f789194f.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/ef95f2db-63dc-475f-8c20-a2cb29c24975.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/214dce8a-55ae-4fa7-ace8-8e418338c21e.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/2192c700-0d74-4121-8d00-6af121697da0.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/c915cd77-49a6-489e-b395-984efd6fd3c6.png?format=avifundefined" alt="">
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Men's fashion</h1>
+            <div class="md:flex hidden justify-evenly">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/40557d3b-884a-49cf-88bd-eac13e854a82.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/6ef80127-08a1-4c1d-9d8e-dc5139271796.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/a72be501-0e48-46d5-aba3-20e2ae9578e1.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/417ba5a1-f5bc-4bcc-9182-dc769577ac3a.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/e25554c9-62a4-424e-845c-bd14a678de53.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/12c566c6-f3a3-4a9d-b54d-cd8a98c34f18.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/48e098b8-0f8b-4970-adbf-f02c96f46b87.png?format=avifundefined" alt="">
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Kid's fashion</h1>
+            <div class="md:flex hidden justify-evenly pb-3">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/3876fd49-aa16-4992-9c49-419da54ffb43.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/abc788e7-0d08-4479-b3b2-7498714c76b6.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/fddba340-fcd6-4749-8999-b84da757c1a2.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/45665933-eeac-42c1-b68f-4e3691d8d71c.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/d0725cb6-1664-471d-ad2b-bcc685ad034e.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/35fe0e8c-c804-4512-a00e-87646dc516bc.png?format=avifundefined" alt="">
+                <img width="163px" height="269px" src="https://f.nooncdn.com/mpcms/EN0001/assets/108dbeac-6f8d-45db-9512-1e038b075333.png?format=avifundefined" alt="">
+            </div>
+        </div>
+        <div class="bg-[#ffffff]">
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Electronics</h1>
+            <div class="md:flex hidden justify-evenly pb-3">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/a3f8d9ba-91c5-4550-bfb2-5a7ef53d4d6e.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/55d96255-74ae-4aaf-8ac2-c3986190fde4.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/e5b44374-dbba-4157-8f83-9d9975d8ad60.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/7d75a3bd-08c0-4a04-9e8c-cb9547da3047.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/dc317c7b-7401-485a-aefc-0509ebfbebab.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/bf672a58-6b5d-4fb1-870a-0034e4291660.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/2f199af6-7143-45dd-ad1e-e253b44b88fa.png?format=avifundefined" alt="">
+
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Laptops & accessories</h1>
+            <div class="md:flex hidden justify-evenly pb-3">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/4bc0b15b-22ef-46ab-9040-073f71eee488.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/919f85f3-b965-424c-8248-517c8141c7ac.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/a8df0bd6-b178-4707-98bf-fab7e9e57793.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/7569239c-ccd8-4d23-a6ea-46768a59ce01.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/88778bd1-0351-480f-8b30-62d9f97f2f12.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/de1d933f-8266-4da2-9010-59406e1b37ab.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/b66575de-6208-4ee3-8a7b-ee85fa5b5d9e.png?format=avifundefined" alt="">
+
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Mobiles & accessories</h1>
+            <div class="md:flex hidden justify-evenly pb-3">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/52eacc92-3cc7-4ccc-8939-f3be1a5ee238.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/d832d95a-d1e2-47cc-852a-3197886128ac.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/c1e23fd4-5bd4-4b99-8321-d10b89f12d54.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/790df29c-294c-4c06-b87e-114c560295e6.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/eaaedd8a-ac86-4242-b6d9-0e0e51030124.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/b215cb83-5249-478a-b1b7-4f9630dfd26e.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/f0e5c9e4-0e5f-4f27-98f5-de983510bb54.png?format=avifundefined" alt="">
+
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Beauty</h1>
+            <div class="md:flex hidden justify-evenly pb-3">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/b05362c8-ea30-44ee-b803-4fa51619d7c8.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/39f6b0a1-c308-4915-9b45-e3cf13b4a66b.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/1be76b30-7a10-4524-b753-53372d9e9dac.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/82ff0c46-1e81-49d1-856e-67bcd8c838b0.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/da5ec41a-08be-4461-8b79-3b8540c2390b.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/8e45721d-23b8-404e-98cb-f4eea525a3d1.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/67aee30f-6ac8-4031-997f-f8d6e05b9ba7.png?format=avifundefined" alt="">
+
+            </div>
+            <h1 class="font-bold text-[22px] text-left text-[#404553] pt-2 ml-4 pb-3 font-sans">Home & Kitchen favourites</h1>
+            <div class="md:flex justify-evenly pb-3">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/d682c6c5-f0b7-4226-8629-9f1c3cfa8197.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/09a2d5b8-7f8a-4bc2-8d6f-552754213f00.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/f216ad3c-f514-4ad5-a83f-6f1956f0f143.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/d25a389b-384e-4197-b52c-5a4513cbf86c.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/2d60a02e-d7f1-490b-a9e4-99cdb2050b08.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/08c580d4-81fb-4aa7-bb49-cf691dd03edf.png?format=avifundefined" alt="">
+                <img width="163px" height="201px" src="https://f.nooncdn.com/mpcms/EN0001/assets/b38dfc3d-a8df-43b5-934e-d6b56d552374.png?format=avifundefined" alt="">
+
+            </div>
+
+        </div>
+        <div>
+            <img class="w-full" src="https://f.nooncdn.com/mpcms/EN0001/assets/5359f0ff-a2f1-425a-a513-6adaebd264f3.png?format=avifundefined" alt="">
+        </div>
 
     </div>
+    <!-- footer start -->
+    <div class="md:flex cursor-pointer justify-evenly pt-4">
+        
+        
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">ELECTRONICS</li>
+            <li class="text-[#404553] pb-2">Mobiles</li>
+            <li class="text-[#404553] pb-2">Tablets</li>
+            <li class="text-[#404553] pb-2">Laptops</li>
+            <li class="text-[#404553] pb-2">Home Appliances</li>
+            <li class="text-[#404553] pb-2">Camera, Photo & Video</li>
+            <li class="text-[#404553] pb-2">Televisions</li>
+            <li class="text-[#404553] pb-2">Headphones</li>
+            <li class="text-[#404553] pb-2">Video Games</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">FASHION</li>
+            <li class="text-[#404553] pb-2">Women's Fashion</li>
+            <li class="text-[#404553] pb-2">Men's Fashion</li>
+            <li class="text-[#404553] pb-2">Girls' Fashion</li>
+            <li class="text-[#404553] pb-2">Boys' Fashion</li>
+            <li class="text-[#404553] pb-2">Watches</li>
+            <li class="text-[#404553] pb-2">Jewellery</li>
+            <li class="text-[#404553] pb-2">Women's Handbags</li>
+            <li class="text-[#404553] pb-2">Men's Eyewear</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">HOME AND KITCHEN</li>
+            <li class="text-[#404553] pb-2">Bath</li>
+            <li class="text-[#404553] pb-2">Home Decor</li>
+            <li class="text-[#404553] pb-2">Kitchen & Dining</li>
+            <li class="text-[#404553] pb-2">Tools & Home Improvement</li>
+            <li class="text-[#404553] pb-2">Audio & Video</li>
+            <li class="text-[#404553] pb-2">Furniture</li>
+            <li class="text-[#404553] pb-2">Patio, Lawn & Garden</li>
+            <li class="text-[#404553] pb-2">Pet Supplies</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">DAILY GROCERIES</li>
+            <li class="text-[#404553] pb-2">Fresh Produce</li>
+            <li class="text-[#404553] pb-2">Dairy & Eggs</li>
+            <li class="text-[#404553] pb-2">Bread & Bakery</li>
+            <li class="text-[#404553] pb-2">Meat & Seafood</li>
+            <li class="text-[#404553] pb-2">Breakfast Food</li>
+            <li class="text-[#404553] pb-2">Pantry Staples</li>
+            <li class="text-[#404553] pb-2">Household Supplies</li>
+            <li class="text-[#404553] pb-2">Personal Care</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">BEAUTY</li>
+            <li class="text-[#404553] pb-2">Fragrance</li>
+            <li class="text-[#404553] pb-2">Make-Up</li>
+            <li class="text-[#404553] pb-2">Haircare</li>
+            <li class="text-[#404553] pb-2">Skincare</li>
+            <li class="text-[#404553] pb-2">Bath & Body</li>
+            <li class="text-[#404553] pb-2">Electronic Beauty Tools</li>
+            <li class="text-[#404553] pb-2">Men's Grooming</li>
+            <li class="text-[#404553] pb-2">Health Care Essentials</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">BABY & TOYS</li>
+            <li class="text-[#404553] pb-2">Diapering</li>
+            <li class="text-[#404553] pb-2">Baby Transport</li>
+            <li class="text-[#404553] pb-2">Nursing & Feeding</li>
+            <li class="text-[#404553] pb-2">Baby & Kids Fashion</li>
+            <li class="text-[#404553] pb-2">Baby & Toddler Toys</li>
+            <li class="text-[#404553] pb-2">Tricycles & Scooters</li>
+            <li class="text-[#404553] pb-2">Board Games & Cards</li>
+            <li class="text-[#404553] pb-2">Outdoor Play</li>
+        </ul>
+        <ul>
+            <li class="font-bold text-[#404553] pb-3 pt-3 ">TOP BRANDS</li>
+            <li class="text-[#404553] pb-2">Pampers</li>
+            <li class="text-[#404553] pb-2">Apple</li>
+            <li class="text-[#404553] pb-2">Nike</li>
+            <li class="text-[#404553] pb-2">Samsung</li>
+            <li class="text-[#404553] pb-2">Tefal</li>
+            <li class="text-[#404553] pb-2">L'Oréal Paris</li>
+            <li class="text-[#404553] pb-2">Noon One</li>
+            <li class="text-[#404553] pb-2">Skechers</li>
+        </ul>
+    </div>
+    <div class="md:flex hidden justify-evenly mt-11 mb-11">
+        <div>
+            <div class="font-bold text-[#404553] px-11">SHOP ON THE GO</div>
+            <div class="flex justify-center mt-2">
+                <img src="./assets/noon pictures/app-store.svg" alt="" width="113px" height="35px">
+                <img src="./assets/noon pictures/google-play.svg" alt="" width="113px" height="35px">
+            </div>
+        </div>
+        <div>
+            <div class="font-bold text-[#404553]">CONNECT WITH US</div>
+            <div class="flex justify-evenly mt-4">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #ffd43b;"></i>
+                <i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffd43b;"></i>
+                <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffd43b;"></i>
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffd43b;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#f7f7fa] md:flex hidden justify-between ">
+        <div>
+            <div class="text-sm p-6">© 2023 noon. All Rights Reserved</div>
+            <ul class="flex justify-evenly text-sm gap-3">
+                <li>Careers</li>
+                <li>Warranty Policy</li>
+                <li>Sell with us</li>
+                <li>Terms of Use</li>
+                <li>Terms of Sale</li>
+                <li>Privacy Policy</li>
+                <li>Consumer Rights</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex gap-7 pt-4 pr-5">
+                <li>
+                    <img src="./assets/noon pictures/card-mastercard.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/noon pictures/card-visa.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/noon pictures/card-amex.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/noon pictures/cod-en.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/noon pictures/tabby.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/noon pictures/tamara-en.svg" alt="">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- footer end -->
+   
 
 
 
-
-
+    <script src="https://kit.fontawesome.com/5562aae272.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
